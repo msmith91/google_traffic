@@ -66,7 +66,7 @@ class googleMaps:
             list - array - the array to be appended to the CSV file.
             filename - string - the CSV file the array should be appended to.
         """
-        self.check_csv(filename)
+    #    self.check_csv(filename)
         with open(filename,'a') as f:
             f.write(self.to_csv(list))
         f.close()
