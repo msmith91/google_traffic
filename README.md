@@ -31,7 +31,6 @@
  
 # Usage
   
-  You can run it via "python traffic_times.py to_work" to output times from the "home" variable to the "work" variable in the script, or "python traffic_times.py from_work" for the reverse.
   
  +```traffic_times.py [-h] [-tm {best_guess,pessimistic,optimistic,all}] [-d {to_work,from_work}]```
  +
@@ -51,8 +50,8 @@
 I have my crontab setup to run the following:
  
  Run to_work during morning commute times:
- */10 11-15 * * 1-5 /usr/bin/python traffic_times.py to_work
+ */10 11-15 * * 1-5 /usr/bin/python traffic_times.py -tm all -d to_work
  Run from_work during evening commute times:
- */10 19-23 * * 1-5 /usr/bin/python traffic_times.py from_work
+ */10 19-23 * * 1-5 /usr/bin/python traffic_times.py -tm all -d from_work
  
  I run the r script from time to time to update graphs (Rscript traffic_plots.R)
