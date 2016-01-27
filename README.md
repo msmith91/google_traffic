@@ -49,9 +49,10 @@
   
 I have my crontab setup to run the following:
  
- Run to_work during morning commute times:
- */10 11-15 * * 1-5 /usr/bin/python traffic_times.py -tm all -d to_work
- Run from_work during evening commute times:
- */10 19-23 * * 1-5 /usr/bin/python traffic_times.py -tm all -d from_work
+Run to_work during morning commute times:
+*/10 11-15 * * 1-5 /usr/bin/python traffic_times.py -tm all -d to_work
  
- I run the r script from time to time to update graphs (Rscript traffic_plots.R)
+Run from_work during evening commute times:
+*/10 19-23 * * 1-5 /usr/bin/python traffic_times.py -tm all -d from_work
+ 
+I run the r script from time to time to update graphs (Rscript traffic_plots.R)
