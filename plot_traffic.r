@@ -1,7 +1,7 @@
 #Script to read in the data output from traffic_times.py and plot the average
 #travel durations at each 10 minute interval across the three model types
 
-traffic=read.csv('/Users/Mike/Downloads/schaumburg_traffic.csv')
+traffic=read.csv('schaumburg_traffic.csv')
 
 traffic$time = paste(traffic$hour,traffic$minute,sep='.')
 traffic$time_nb = as.numeric(traffic$time)
