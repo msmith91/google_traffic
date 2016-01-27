@@ -1,15 +1,13 @@
-# google_traffic
-Gathering and Analyzing Traffic Data from Google Map's API
 
- # google_traffic
+# google_traffic
  
  Google Maps tool for obtaining estimated trip times.
  
- ## Description
+# Description
  
  traffic_times.py is a Python 2 script that retrieves 3 travel duration estimates working off the assuption that you depart at the current time.
  
- ## Google API Key Requirements
+# Google API Key Requirements
  
  For this project, you'll need a Google API Key. You can do so here:
  https://developers.google.com/maps/documentation/javascript/get-api-key#key
@@ -31,7 +29,7 @@ Gathering and Analyzing Traffic Data from Google Map's API
    7. Copy your key.
  4. Set googleMaps.self.key to your API key.
  
- ## Usage
+# Usage
   
   You can run it via "python traffic_times.py to_work" to output times from the "home" variable to the "work" variable in the script, or "python traffic_times.py from_work" for the reverse.
   
@@ -48,7 +46,7 @@ Gathering and Analyzing Traffic Data from Google Map's API
  +
  +```
  +
-  ### Recommended Setup
+# Recommended Setup
   
 I have my crontab setup to run the following:
  
