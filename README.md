@@ -1,7 +1,7 @@
 # google_traffic
 Gathering and Analyzing Traffic Data from Google Map's API
 
-###############################################################################
+*******************************************************************************
 MIT License
 Copyright (c) 2016 Michael Smith
 
@@ -23,7 +23,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-###############################################################################
+*******************************************************************************
 
 I have my crontab setup to run the following:
 
