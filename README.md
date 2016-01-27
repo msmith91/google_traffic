@@ -1,6 +1,22 @@
 # google_traffic
 Gathering and Analyzing Traffic Data from Google Map's API
 
+For this project, you'll need a Google API Key. You can do so here:
+https://developers.google.com/maps/documentation/javascript/get-api-key#key
+
+traffic_times.py is a python2 script that returns 3 travel duration estimates assuming you depart
+now.  You can run it via "python traffic_times.py to_work" to output times from the "home" variable to 
+the "work" variable in the script, or "python traffic_times.py from_work" for the reverse.
+
+I have my crontab setup to run the following:
+
+Run to_work during morning commute times:
+*/10 11-15 * * 1-5 /usr/bin/python traffic_times.py to_work
+Run from_work during evening commute times:
+*/10 19-23 * * 1-5 /usr/bin/python traffic_times.py from_work
+
+I run the r script from time to time to update graphs (Rscript traffic_plots.R)
+
 *******************************************************************************
 MIT License
 Copyright (c) 2016 Michael Smith
@@ -25,10 +41,4 @@ SOFTWARE.
 
 *******************************************************************************
 
-I have my crontab setup to run the following:
 
-*/10 11-15 * * 1-5 /usr/bin/python traffic_times.py to_work
-
-*/10 19-23 * * 1-5 /usr/bin/python traffic_times.py from_work
-
-And then I run the r script from time to time to update graphs
