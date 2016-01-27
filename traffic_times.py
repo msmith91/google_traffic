@@ -27,7 +27,7 @@ traffic_model = args.traffic_model
 class googleMaps:
     def __init__(self):
         self.url = 'https://maps.googleapis.com/maps/api/directions/json?'
-        self.key = 'AIzaSyAGiUQOMd8KQh6UbOz1hSy3M73DzkNRfXk'
+        self.key = 'API KEY GOES HERE'
 
     def get_time(self, origin, destination, traffic_model):
         """Return observations for a given trip.
